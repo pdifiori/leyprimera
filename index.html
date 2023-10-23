@@ -6,51 +6,110 @@
     <title>Ley Primera</title>
     <link rel="icon" type="image/jpg" href="./img/leyprimeraico.PNG"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
-
-
-
-<body class="cuerpoPrincipal">
-
-    <!--header con barra de navegacion (h1)-->
-    <header>
-        <nav class="navegacion">
-            <div class="logoPrincipal" >
-                <h1><a href="./index.html"><img src="./img/leyprimeraico.PNG"></a></h1>
-            </div>
-            <nav class="menu-completo" id="menu-completo">
-                        <a href="./index.html" class="menu-pagina">.Inicio</a>
-                        <a href="./pages/new-in.html" class="menu-pagina">.New In</a>
-                        <a href="./pages/como-comprar.html" class="menu-pagina">.Como comprar</a>
-                        <a href="./pages/contacto.html" class="menu-pagina">.Contacto</a>
-            </nav>    
-        </nav>
+<body class="grid-container">
+    <!------------------------------------------------------------------------>
+    <header class="header">
+        <h1><a href="./index.html"><img src="./img/leyprimeraico.PNG"></a></h1>
     </header>
+    <!------------------------------------------------------------------------>
 
-    <!--galeria-->
-    <main class="gallery">
-        <nav>
-            <a class="seccion1" href="#">
-                <img src="./img/camisas/camisas.png">
-            </a> 
-            <a class="seccion2" href="#">
-                <img src="./img/sweters/sweter1.PNG">
-            </a>
-            <a class="seccion3" href="#">
-                <img src="./img/pantalones/pantalon1.png">
-            </a>
-        </nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">New In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Como comprar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Galeria
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Camisas</a></li>
+                      <li><a class="dropdown-item" href="#">Sweters</a></li>
+                      <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </nav>
+    <!------------------------------------------------------------------------>
+    <main class="main">
+        <div class="child-page-listing">
+
+                
+            <div class="grilla">
+          
+              <article id="3685" class="location-listing">
+          
+                <a class="location-title" href="#">
+                    Camisas          </a>
+          
+                <div class="location-image">
+                  <a href="./pages/camisas.html">
+                      <img width="100%" height="100%" src="./img/camisas/camisas.PNG" alt="san francisco">    </a>
+          
+                </div>
+          
+              </article>
+          
+              <article id="3688" class="location-listing">
+          
+                <a class="location-title" href="#">
+                    Pantalones           </a>
+          
+                <div class="location-image">
+                  <a href="./pages/pantalones.html">
+                      <img width="100%" height="100%" src="./img/pantalones/pantalon1.png" alt="london">  </a>
+          
+                </div>
+          
+              </article>
+          
+              <article id="3691" class="location-listing">
+          
+                <a class="location-title" href="#">
+                    Sweters          </a>
+          
+                <div class="location-image">
+                  <a href="./pages/sweters.html">
+                      <img width="100%" height="100%" src="./img/sweters/sweter1.PNG" alt="new york">  </a>
+          
+                </div>
+          
+              </article>
+          
+              
+          </div>
     </main>
-
-    <!--footer con contacto y redes-->
-    <footer class="piecito">
+    
+    
+    <!------------------------------------------------------------------------>
+    <article class="article">
+        
+        PEDINOS TU GIFT CARD PARA REGALAR
+    </article>
+    <!------------------------------------------------------------------------>
+    
+    
+    <footer class="footer">
         <div class="pie-domicilio">
             <p>Showroom</p>
-            <p>L.M.Firpo 177 - CP6000</p>
-            <p>Junin - Tel. 2364597933</p>
+            <p>Firpo 177 - Junin</p>
+            <p> (236)4597933</p>
         </div>
         <div class="pie-menu-redes">
             <a href="https://www.instagram.com/ley.primera/" target="_blank"><img src="./img/instagram.png" height="40"></a>
@@ -58,13 +117,21 @@
         </div>
         <div class="pie-copyright">
             <p>© Copyright 2023 Ley Primera - Todos los derechos reservados</p>
-            <p>Terminos y condiciones<p>
+            <p>Terminos y condiciones</p>
         </div>
     </footer>
-    
-</body> 
 
-<!----script para bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!------------------------------------------------------------------------>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+
 
 </html>
+
+    
