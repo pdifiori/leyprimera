@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+@import "./partials/preset.scss";
+@import "./partials/grilla.scss";
+@import "./partials/article.scss";
+@import "./partials/footer.scss";
+
+
+.grid-container > * {
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+
+    grid-template:
+        "header" .35fr
+        "navbar" .15fr
+        "main " auto
+        "sidebar" .15fr
+        "footer" .15fr;
+}
+
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+    text-transform: uppercase;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+
+
+

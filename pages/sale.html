@@ -5,42 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ley Primera - ¡SALE! ¡TODO 50% OFF POR FIN DE TEMPORADA!</title>
     <link rel="icon" type="image/jpg" href="../img/leyprimeraico.PNG"/>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 
-<body>
-    <!--header con barra de navegacion (h1)-->
-    <header>
-        <nav class="navegacion">
-            <div class="logoPrincipal" >
-                <h1><a href="../index.html"><img src="../img/leyprimeraico.PNG"></a></h1>
-            </div>
-            <nav class="menu-completo">
-                        <a href="../index.html" class="menu-pagina">.Inicio</a>
-                        <a href="./new-in.html" class="menu-pagina">.New In</a>
-                        <a href="./como-comprar.html" class="menu-pagina">.Como comprar</a>
-                        <a href="./contacto.html" class="menu-pagina">.Contacto</a>
-            </nav>    
-        </nav>
+<body class="grid-container">
+
+    <!------------------------------------------------------------------------>
+    <header class="header">
+        <h1><a href="../index.html"><img class="logo" src="../img/leyprimeraico.PNG"></a></h1>
     </header>
 
 
+
+    <!------------------------------------------------------------------------>
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/new-in.html">New In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/como-comprar.html">Como comprar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="../pages/camisas.html">Camisas</a></li>
+                      <li><a class="dropdown-item" href="../pages/sweters.html">Sweters</a></li>
+                      <li><a class="dropdown-item" href="../pages/pantalones.html">Pantalones</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </nav>
+
+    <!------------------------------------------------------------------------>
+    <main class="main">
+        <div class="child-page-listing">
+             
+            <div class="grilla">
+          
+              <article id="3685" class="location-listing">
+          
+                <a class="location-title" href="#">
+                    Camisas          </a>
+          
+                <div class="location-image">
+                  <a href="./pages/camisas.html">
+                      <img width="100%" height="100%" src="../img/sale/1.jpeg" alt="san francisco">    </a>
+          
+                </div>
+          
+              </article>
+          
+              <article id="3688" class="location-listing">
+          
+                <a class="location-title" href="#">
+                    Pantalones           </a>
+          
+                <div class="location-image">
+                  <a href="./pages/pantalones.html">
+                      <img width="100%" height="100%" src="../img/sale/3.jpeg" alt="london">  </a>
+          
+                </div>
+          
+              </article>
+          
+              <article id="3691" class="location-listing">
+          
+                <a class="location-title" href="#">
+                    Sweters          </a>
+          
+                <div class="location-image">
+                  <a href="./pages/sweters.html">
+                      <img width="100%" height="100%" src="../img/sale/2.jpeg" alt="new york">  </a>
+          
+                </div>
+          
+              </article>
+          
+              <article id="3692" class="location-listing">
+          
+                <a class="location-title" href="#">
+                    Sweters          </a>
+          
+                <div class="location-image">
+                  <a href="./pages/sweters.html">
+                      <img width="100%" height="100%" src="../img/sale/4.jpeg" alt="new york">  </a>
+          
+                </div>
+          
+              </article>
+              
+          </div>
+    </main>
     
-    <section class="galeria">
-        <img src="../img/sale-50.webp" >
-    </section>
     
+    <!------------------------------------------------------------------------>
+    <article class="article">
+        <a data-bs-toggle="modal" data-bs-target="#staticBackdrop">PEDINOS TU <span> GIFT CARD </span> PARA REGALAR<img class="regalo" height=60px width=60px src="../img/gift-outline-filled.png"></a>
+        <!-- modal de la gift card -->
     
-    <section class="pie">
-        <tr class="menu-redes">     
-            <a href="https://www.instagram.com/ley.primera/" ><img src="../img/instagram.png" height="40"></a>
-            <a href="https://www.facebook.com/ley.primera.94" class="menu-redes"><img src="../img/facebook.webp" height="40"></a>
-        </tr>
-        <tr>
-            <br>    
-            © PDF 2023
-        </tr>
-    </section>
-    
-</body> 
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Pedinos tu Gift Card para regalar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/gift.png">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Gracias</button>
+          <button type="button" class="btn btn-primary">¡Quiero una!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </article>
+
+
+
+    <!------------------------------------------------------------------------>
+    <footer class="footer">
+      
+          <strong>Showroom</strong>    
+          Firpo 177 - Junin
+          <a><img height=30px width=30px src="../img/whatsapp.png">(236)4597933</a>
+      <div>
+          <a href="https://www.instagram.com/ley.primera/" target="_blank"><img src="../img/instagram.png" height="40"></a>
+          <a href="https://www.facebook.com/ley.primera.94" class="menu-redes" target="_blank"><img src="../img/IconoFacebook.png" height="40"></a>
+      </div>
+          © Copyright 2023 Ley Primera - PyxelPerfect Todos los derechos reservados
+          Terminos y condiciones
+      
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!------------------------------------------------------------------------>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
 </html>

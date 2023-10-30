@@ -1,171 +1,194 @@
-/*reseteo de parametros*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 
-*{
+
+/*reseteo de parametros*/
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Montserrat;
-    text-decoration: none; 
+    
 }
 
-@font-face {
-    font-family: "Montserrat";
-    src: url(../Fonts/Montserrat-VariableFont_wght.ttf)
+body {
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
 }
 
-/**************************   MENU COMPLETO ******************/
-
-/*defino el flex del nav logo principal + menu de navegacion*/
-
-
-.navegacion{
-    display: flex;
-    flex-direction: column;
+html {
+    height: 100%;
 }
 
-.logoPrincipal{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.grid-container > * {
+    
+    padding: 10px;
+    text-align: center;    
 }
 
-.menu-completo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
+.grid-container{
+    display: grid;
+    gap: 10px;
+    
+    grid-template:   
+        "header" .35fr
+        "navbar" .15fr
+        "main " auto
+        "sidebar" .15fr
+        "footer" .15fr; 
+             
+}
+
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
     text-transform: uppercase;
 }
 
-.menu-completo > a{
-    margin: 1rem;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-around;
-    
-    
-}
-/************************** FORMATEO LOS BOTONES FOCUS HOOVER ETC ******************/
-.menu-completo > a:link {
-    color: #265301;
-}
-  
-.menu-completo >a:visited {
-    color: #437a16;
-}
-  
-.menu-completo >a:focus {
-    background: #bae498;
-}
-  
-.menu-completo >a:hover {
-    background: #cdfeaa;
-}
-  
-.menu-completo >a:active {
-    background: #265301;
-    color: #cdfeaa;
+
+.main {
+    grid-area: main;
 }
 
-/*******************************************************/
-/************************** GALERIA   ******************/
-/*Defino el flex de la galeria ajusto ancho y overflow*/
-.galeria {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
+.article  {
+    grid-area: sidebar;
+    font-size: 3rem;
+    line-height: center;
+    background-color: rgb(248, 248, 248);
+    
+    
     
 }
 
-.galeria > a {
-    margin: 0.3em;
-    max-width: 33%;
-    align-items: center;
-    overflow-x: hidden;
+.article a {
+  text-decoration: none;
+  color: black;
 }
 
-
-
-/*----------------------------------------------*/
-.sweters1{
-    background-image: url(../img/sweters/sweter1.PNG);
-}
-.sweters2{
-    background-image: url(../img/sweters/sweter2.PNG);
-}
-.sweters3{
-   background-image: url(../img/sweters/sweter3.PNG);
-}
-/*----------------------------------------------*/
-.pantalon1{
-    background-image: url(../img/pantalones/pantalon1.png);
-}
-.pantalon2{
-    background-image: url(../img/pantalones/pantalon2.png);
-}
-.pantalon3{
-   background-image: url(../img/pantalones/pantalon3.png);
-}
-/*----------------------------------------------*/
-.camisa1{
-    background-image: url(../img/camisas/camisa2.PNG);
-}
-.camisa2{
-    background-image: url(../img/camisas/camisa3.PNG);
-}
-.camisa3{
-   background-image: url(../img/camisas/camisas.png);
+.regalo  {
+  margin-left: 1rem;
+  transition:  0.5s ease-in-out;
+  
 }
 
-/**************************   PIE ******************/
+.regalo:hover{
+  transform: scale(1.2);
 
-.nueva-temporada{
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
-.pie{
-    
+.logo  {
+  
+  transition:  0.5s ease-in-out;
+  
+}
+
+.logo:hover{
+  transform: scale(1.2);
+
+}
+
+.footer {
+    grid-area: footer;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: black; 
-    color: white;
-  
-}
-
-.pie > div{
-    justify-content: center;
-    align-items: center;
-}
-
-.formulario-completo {
-    background: #FFF;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
     
-}
-
-.contacto label, .contacto input, .contacto textarea {
-    display: block;
+    color: white;
+    font-size: 1rem;
+    background-color:  black;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.5);
+  }
+ 
+.grilla {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: .1em;
+    height: auto;
+  }
+    
+  /* hover styles */
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
     width: 100%;
-    margin-bottom: 5px;   
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(165, 164, 164, 0.4);
+    color: white;
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+/* for touch screen devices */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
+    
+
+@media (max-width: 800px) {
+    .grilla {
+        display: flex;
+        flex-direction: column;
+        
+        height: auto;
+      }
+    
+    
+
 }
 
-.contacto textarea {
-    min-height: 100px;
- }
-
-.contacto input:not([type='submit']), .contacto textarea {
-    margin-bottom: 10px;
-    font-size: 20px;
-    outline: none;
-    color: gray;
-}
