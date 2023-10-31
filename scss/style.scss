@@ -4,7 +4,7 @@
 @import "./partials/preset.scss";
 @import "./partials/grilla.scss";
 @import "./partials/article.scss";
-@import "./partials/footer.scss";
+@import "./partials/footer.css";
 
 
 .grid-container > * {
@@ -35,6 +35,14 @@
 
 .main {
     grid-area: main;
+}
+
+.logo {
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 
