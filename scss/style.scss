@@ -6,6 +6,8 @@
 @import "./partials/article.scss";
 @import "./partials/footer.css";
 
+$color-fuente: black;
+$color-fondo: white;
 
 .grid-container > * {
     padding: 10px;
@@ -44,6 +46,7 @@
         transform: scale(1.2);
     }
 }
+
 
 
 
